@@ -1,7 +1,7 @@
 # CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
 
 <ins>Total de Horas:</ins> 50 Horas  
-<ins>Total de Dias:</ins> 76
+<ins>Total de Dias:</ins> 76  
 <ins>Total de Dias P/ Seção:</ins> 40 minutos por dia
 
 
