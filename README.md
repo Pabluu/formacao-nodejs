@@ -1,13 +1,13 @@
 # CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
 
-<ins>Total de Horas:</ins> 50 Horas  
-<ins>Total de Dias:</ins> 76  
-<ins>Total de Dias P/ Seção:</ins> 40 minutos por dia
+Total de Horas: 50 Horas  
+Total de Dias: 76 Dias  
+Total de Horas P/ Dias: 40 min por dia  
 
 
-<ins>Data Inicio:</ins> 09/10/2022  
-<ins>Data <strong>Prevista</strong> Para Finalização:</ins> 24/12/2022  
-<ins>Data da Finalização:</ins> 
+Data Inicio: 09/10/2022  
+Data <strong>Prevista</strong> Para Finalização: 24/12/2022  
+Data da Finalização: 
 
 
 - [ ] Introdução ao Node.js - 55m
