@@ -10,11 +10,11 @@ Data <strong>Prevista</strong> Para Finalização: 24/12/2022
 Data da Finalização: 
 
 
-- [ ] Introdução ao Node.js - 55m
+- [x] Introdução ao Node.js - 55m <-> `09/10/2022`
 
-- [ ] HTTP - 19m
+- [x] HTTP - 19m ->> `09/10/2022`
 
-- [ ] Fundamentos do Express.js - 1h 2m
+- [x] Fundamentos do Express.js - 1h 2m ->> `09/10/2022`
 
 - [ ] MySQL Básico - 51m
 
