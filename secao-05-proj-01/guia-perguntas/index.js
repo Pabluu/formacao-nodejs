@@ -4,9 +4,10 @@ const app = express();
 // setando o motor de html é o EJS
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) =>{
-    // res.send('Bem-vinda(o) ao meu site')
-    res.render('index');
+app.get('/:nome?', (req, res) =>{
+    // res.send('Besm-vinda(o) ao meu site')
+    let nome = req.params['nome'] || 'Pablo Henrique';
+    res.render('index', {nome});
 })
 
 app.listen(8080, (error) => {
