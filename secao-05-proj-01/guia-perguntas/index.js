@@ -50,6 +50,20 @@ app.post('/salvarpergunta', (req, res) => {
     })
 })
 
+app.get('/pergunta/:id', (req, res) => {
+    let id = req.params.id;
+    Pergunta.findOne({ where: { id: id } })
+    .then(pergunta => {
+        if(pergunta != undefined){ // pergunta encontrada
+            res.render('pergunta', {
+                pergunta: pergunta
+            });
+        }else{ //não encontrada
+            res.redirect('/');
+        }
+    });
+})
+
 app.listen(8080, (error) => {
     if (error) {
         console.log(`Erro ao levantar o servidor: ${error}`)
