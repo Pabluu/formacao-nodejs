@@ -1,69 +1,69 @@
-01 - Introdução ao Node.js
-	- [ ] 1. Bem vindo - Acesse a nossa comunidade! - 1m
-	- [ ] 2. Formação Node.js - 3m
-	- [ ] 3. O que é Node.js - 12m
-	- [ ] 4. Como instalar o Node.js - 7m
-	- [ ] 5. Recomendação de editor de código - 4m
-	- [ ] 6. Seu primeiro código com Node.js - 10m
-	- [ ] 7. Módulos - 18m 
+01. - [x] Introdução ao Node.js 
+	- [x] 1. Bem vindo - Acesse a nossa comunidade! - 1m
+	- [x] 2. Formação Node.js - 3m
+	- [x] 3. O que é Node.js - 12m
+	- [x] 4. Como instalar o Node.js - 7m
+	- [x] 5. Recomendação de editor de código - 4m
+	- [x] 6. Seu primeiro código com Node.js - 10m
+	- [x] 7. Módulos - 18m 
 
-02 - [x] HTTP - 19m - `09/10/2022`
+02. - [x] HTTP - 19m - `09/10/2022`
 	- [x] 8. O que é HTTP? - 6m
-	- [ ] 9. Sua primeira aplicação HTTP com Node.js - 13m
+	- [x] 9. Sua primeira aplicação HTTP com Node.js - 13m
 
-03 - [x] Fundamentos do Express.js - 1h 2m - `09/10/2022`
-	- [ ] 10. O que é o Express.js e NPM - 12m
-	- [ ] 11. Estrutura inicial - 6m
-	- [ ] 12. Rotas - 17m
-	- [ ] 13. Carregamento automático - 5m
-	- [ ] 14. Parâmetros - 13m
-	- [ ] 15. Query params - 6m
-	- [ ] 16. Simples e fantástico - 2m
+03. - [x] Fundamentos do Express.js - 1h 2m - `09/10/2022`
+	- [x] 10. O que é o Express.js e NPM - 12m
+	- [x] 11. Estrutura inicial - 6m
+	- [x] 12. Rotas - 17m
+	- [x] 13. Carregamento automático - 5m
+	- [x] 14. Parâmetros - 13m
+	- [x] 15. Query params - 6m
+	- [x] 16. Simples e fantástico - 2m
 
-04 - [x] MySQL Básico - 51m - `10/10/2022`
-	- [ ] 17. Instalando o MySQL - 15m
-	- [ ] 18. Tabelas - 16m
-	- [ ] 19. INSERT, SELECT E WHERE - 11m
-	- [ ] 20. Delete - 4m
-	- [ ] 21. Update - 5m
+04. - [x] MySQL Básico - 51m - `10/10/2022`
+	- [x] 17. Instalando o MySQL - 15m
+	- [x] 18. Tabelas - 16m
+	- [x] 19. INSERT, SELECT E WHERE - 11m
+	- [x] 20. Delete - 4m
+	- [x] 21. Update - 5m
 
-05 - [ ] [Proj#01] Criando uma plataforma de perguntas e respostas
+05. - [x] [Proj#01] Criando uma plataforma de perguntas e respostas
  com MySQL - 3h 56m - `10/10/2022 à /10/2022` 
-	- [ ] 22. Plataforma de perguntas e resposta - 3m
-	- [ ] 23. EJS e criação de projeto - 8m
-	- [ ] 24. Configurando e exibindo HTML com EJS - 11m
-	- [ ] 25. Exibindo variáveis no HTML - 10m
-	- [ ] 26. Estruturas condicionais com EJS - 8m
-	- [ ] 27. Estruturas de repetição com EJS\n9m - Recursos
-	- [ ] 28. Arquivos estáticos\n7m\nAula concluída\nIniciar\n29. [MUITO IMPORTANTE] - Veja essa aula - Como instalar bootstrap 4 - 1m
-	- [ ] 30. Apresentando e instalando o Bootstrap - 10m
-	- [ ] 31. Criando formulário de perguntas - 9m
-	- [ ] 32. Adicionado card no formulário - 2m
-	- [ ] 33. CSS customizado com Bootstrap - 3m
-	- [ ] 34. Finalizando front com navbar\n7m - Recursos
-	- [ ] 35. AVISO: Nova forma de utilizar partials - correção de erro - 1m
-	- [ ] 36. Reutilizando HTML com partials - 10m
-	- [ ] 37. Envio de formulário para o Node - 7m
-	- [ ] 38. Capturando dados de um formulário\n9m - Recursos
-	- [ ] 39. MySQL Workbench - 3m
-	- [ ] 40. Apresentando e instalando o Sequelize - 4m
-	- [ ] 41. Conexão com o banco de dados - 8m
-	- [ ] 42. Corrigindo erro de conexão do Sequelize - 5m
-	- [ ] 43. Gerando tabela com model - 12m
-	- [ ] 44. Salvando perguntas no banco de dados - 8m
-	- [ ] 45. Buscando perguntas no banco de dados - 5m
-	- [ ] 46. Listando perguntas no Front-end - 7m
-	- [ ] 47. Ordenação com Sequelize - 7m
-	- [ ] 48. Busca condicional com Sequelize - 12m
-	- [ ] 49. Front-end da página de pergunta - 5m
-	- [ ] 50. Perguntas com links dinâmicos - 6m
-	- [ ] 51. Model de Resposta - 9m
-	- [ ] 52. Formulário de resposta - 4m
-	- [ ] 53. Campo de formulário com valor dinâmico - 5m
-	- [ ] 54. Respondendo perguntas - 9m
-	- [ ] 55. Exibição de respostas e finalização\n12m - Recursos
+	- [x] 22. Plataforma de perguntas e resposta - 3m
+	- [x] 23. EJS e criação de projeto - 8m
+	- [x] 24. Configurando e exibindo HTML com EJS - 11m
+	- [x] 25. Exibindo variáveis no HTML - 10m
+	- [x] 26. Estruturas condicionais com EJS - 8m
+	- [x] 27. Estruturas de repetição com EJS\n9m - Recursos
+	- [x] 28. Arquivos estáticos\n7m\nAula concluída\nIniciar\n29. [MUITO IMPORTANTE] - Veja essa aula - Como instalar bootstrap 4 - 1m
+	- [x] 30. Apresentando e instalando o Bootstrap - 10m
+	- [x] 31. Criando formulário de perguntas - 9m
+	- [x] 32. Adicionado card no formulário - 2m
+	- [x] 33. CSS customizado com Bootstrap - 3m
+	- [x] 34. Finalizando front com navbar\n7m - Recursos
+	- [x] 35. AVISO: Nova forma de utilizar partials - correção de erro - 1m
+	- [x] 36. Reutilizando HTML com partials - 10m
+	- [x] 37. Envio de formulário para o Node - 7m
+	- [x] 38. Capturando dados de um formulário\n9m - Recursos
+	- [x] 39. MySQL Workbench - 3m
+	- [x] 40. Apresentando e instalando o Sequelize - 4m
+	- [x] 41. Conexão com o banco de dados - 8m
+	- [x] 42. Corrigindo erro de conexão do Sequelize - 5m
+	- [x] 43. Gerando tabela com model - 12m
+	- [x] 44. Salvando perguntas no banco de dados - 8m
+	- [x] 45. Buscando perguntas no banco de dados - 5m
+	- [x] 46. Listando perguntas no Front-end - 7m
+	- [x] 47. Ordenação com Sequelize - 7m
+	- [x] 48. Busca condicional com Sequelize - 12m
+	- [x] 49. Front-end da página de pergunta - 5m
+	- [x] 50. Perguntas com links dinâmicos - 6m
+	- [x] 51. Model de Resposta - 9m
+	- [x] 52. Formulário de resposta - 4m
+	- [x] 53. Campo de formulário com valor dinâmico - 5m
+	- [x] 54. Respondendo perguntas - 9m
+	- [x] 55. Exibição de respostas e finalização\n12m - Recursos
 
-06 - [ ] Deploy de APP Node + MySQL em VPS - Digital Ocean
+06. - [ ] Deploy de APP Node + MySQL em VPS - Digital Ocean
 	- [ ] 56. Introdução - 2m
 	- [ ] 57. VPS Vs. Hospedagem compartilhada - 5m
 	- [ ] 58. O Deploy simplificado - 3m
@@ -79,7 +79,7 @@
 	- [ ] 68. Rodando aplicação - 6m
 	- [ ] 69. Rodando aplicação no background - 4m
  
-07 - [ ] [Proj#02] Criando um blog com painel administrativo - 6h 11m
+07. - [ ] [Proj#02] Criando um blog com painel administrativo - 6h 11m
 	- [ ] 70. Introdução - 2m
 	- [ ] 71. Relacionamento - 13m
 	- [ ] 72. Base do projeto - 22m
@@ -139,7 +139,7 @@
 	- [ ] 126. Autorização com middleware - 11m
 	- [ ] 127. Logout - 6m
 
-08 - [ ] Javascript ES6, ES7, ES8, 1h 13m
+08. - [ ] Javascript ES6, ES7, ES8, 1h 13m
 	- [ ] 128. O que é ECMAScript - 5m
 	- [ ] 129. Constantes - 8m
 	- [ ] 130. Let e escopo - 18m
@@ -151,7 +151,7 @@
 	- [ ] 136. Find - 7m
 	- [ ] 137. Template Literals - 4m
 
-09 - [ ] Programação assíncrona - Promises e Async/Await - 2h 2m
+09. - [ ] Programação assíncrona - Promises e Async/Await - 2h 2m
 	- [ ] 138. O que é programação síncrona - 8m
 	- [ ] 139. O problema da programação síncrona - 12m
 	- [ ] 140. Programação assíncrona e os problemas que ela resolve - 14m
@@ -169,7 +169,7 @@
 	- [ ] 152. Resolvendo promise hell com Async e Await - 7m
 	- [ ] 153. Tratamento de erros com Async e Await - 7m
 
-10 - [ ] Orientação a objetos com Javascript - 2h 16m
+10. - [ ] Orientação a objetos com Javascript - 2h 16m
 	- [ ] 154. Vamos para outro patamar - 3m
 	- [ ] 155. Introdução a Programação orientada a objetos - 6m
 	- [ ] 156. Classificação - 9m
@@ -188,7 +188,7 @@
 	- [ ] 169. Como eu resolvi um BAITA problema real com composição - 11m
 	- [ ] 170. Herança - 18m
 
-11 - [ ] [Proj#03] Conversor de Excel para HTML e PDF com Node.js - 1h 25m
+11. - [ ] [Proj#03] Conversor de Excel para HTML e PDF com Node.js - 1h 25m
 	- [ ] 171. Introdução - 1m
 	- [ ] 172. Tipos de arquivos - 3m
 	- [ ] 173. Leitura de arquivos - 6m
@@ -204,7 +204,7 @@
 	- [ ] 183. Writer - 7m
 	- [ ] 184. PDFWriter - 7m
 
-12 - [ ] Introdução a API REST com Node.js - 1h 52m
+12. - [ ] Introdução a API REST com Node.js - 1h 52m
 	- [ ] 185. Introdução - 3m
 	- [ ] 186. Revisando o que é HTTP - 6m
 	- [ ] 187. Verbos HTTP - 8m
@@ -222,7 +222,7 @@
 	- [ ] 199. Deletando dados - 5m
 	- [ ] 200. Edição de dados em API REST - 8m
 
-13 - [ ] Consumo de API REST com Axios - 52m
+13. - [ ] Consumo de API REST com Axios - 52m
 	- [ ] 201. Introdução - 3m
 	- [ ] 202. Apresentando o Axios - 4m
 	- [ ] 203. Consumo de API e Cors - 8m
@@ -233,29 +233,29 @@
 	- [ ] 208. Delete request - 3m
 	- [ ] 209. Editando games - 9m
 
-14 - [ ] Autenticação de API Rest com JWT - 47m
+14. - [ ] Autenticação de API Rest com JWT - 47m
 	- [ ] 210. O que é JWT - 9m
 	- [ ] 211. Endpoint de autenticação - 9m
 	- [ ] 212. Corrigindo bug e testando autenticação - 4m
 	- [ ] 213. Geração de Token - 8m
 	- [ ] 214. Autenticação - 17m
 
-15 - [ ] Consumo de API Rest com JWT - 28m
+15. - [ ] Consumo de API Rest com JWT - 28m
 	- [ ] 215. Revendo e revisando projeto HTML - 4m
 	- [ ] 216. Como usar JWT com Axios - 4m
 	- [ ] 217. Sistema de login com JWT - 9m
 	- [ ] 218. Localstorage - 10m
 
-16 - [ ] Documentação de API Rest - 31m
+16. - [ ] Documentação de API Rest - 31m
 	- [ ] 219. Introdução - 11m
 	- [ ] 220. Documentação na prática - 20m
 
-17 - [ ] Chegando ao RESTful com HATEOAS - 26m
+17. - [ ] Chegando ao RESTful com HATEOAS - 26m
 	- [ ] 221. O que é HATEOAS - 8m
 	- [ ] 222. Vantagens de usar HATEOAS - 7m
 	- [ ] 223. HATEOAS na prática - 11m
 
-18 - [ ] Validação de formulários - 35m
+18. - [ ] Validação de formulários - 35m
 	- [ ] 224. Introdução - 1m
 	- [ ] 225. Preparando base do projeto - 5m
 	- [ ] 226. Validando formulário - 14m
@@ -263,7 +263,7 @@
 	- [ ] 228. Validando o formulário - 14m
 	- [ ] 229. Arquivos do modulo - 0m
 
-19 - [ ] Knex.JS - SQL Avançado - 1h 51m
+19. - [ ] Knex.JS - SQL Avançado - 1h 51m
 	- [ ] 230. Introdução - O que é query builder - 13m
 	- [ ] 231. Configurando Knex - 4m
 	- [ ] 232. Insert - 8m
@@ -283,7 +283,7 @@
 	- [ ] 246. Transactions - 10m
 	- [ ] 247. Arquivos do modulo - 0m
 
-20 - [ ] Vue.js - Introdução - 2h 56m
+20. - [ ] Vue.js - Introdução - 2h 56m
 	- [ ] 248. Introdução - O que é Vue.js - 10m
 	- [ ] 249. Relembrando o que é DOM - 5m
 	- [ ] 250. Montando ambiente - 7m
@@ -308,7 +308,7 @@
 	- [ ] 269. Como usar frameworks css no Vue.js - 6m
 	- [ ] 270. Arquivos do modulo - 1m
 
-21 - [ ] [Proj#04] Pokédex com Vue.js - 1h 8m
+21. - [ ] [Proj#04] Pokédex com Vue.js - 1h 8m
 	- [ ] 271. Introdução - 3m
 	- [ ] 272. Instalando bibliotecas - 5m
 	- [ ] 273. Requisições HTTP - 9m
@@ -321,7 +321,7 @@
 	- [ ] 280. Como hospedar uma aplicação Vue.js - 6m
 	- [ ] 281. Arquivos do modulo e Conta grátis da Umbler - 1m
 
-22 - [ ] Vue Router - 32m
+22. - [ ] Vue Router - 32m
 	- [ ] 282. Introdução - 2m
 	- [ ] 283. Estrutura do Vue Router - 10m
 	- [ ] 284. Como criar uma rota - 2m
@@ -330,7 +330,7 @@
 	- [ ] 287. Parâmetros - 8m
 	- [ ] 288. Nested Routes - 6m
 
-23 - [ ] [Proj#05] API Rest de Usuários com Knex.js e JWT - 2h 45m
+23. - [ ] [Proj#05] API Rest de Usuários com Knex.js e JWT - 2h 45m
 	- [ ] 289. Introdução - 5m
 	- [ ] 290. Base do projeto - 3m
 	- [ ] 291. Entendendo estrutura base - 5m
@@ -349,7 +349,7 @@
 	- [ ] 304. Autorização - 15m
 	- [ ] 305. Código fonte - 0m
 
-24 - [ ] [Proj#06] Integração do Node.js com o Vue.js - 2h 5m
+24. - [ ] [Proj#06] Integração do Node.js com o Vue.js - 2h 5m
 	- [ ] 306. Introdução - 3m
 	- [ ] 307. Criando projeto Vue Router - 4m
 	- [ ] 308. Arquivos do projeto 5 - Baixe se não tiver em sua maquina - 0m
@@ -371,14 +371,14 @@
 	- [ ] 324. Editando usuário - 4m
 	- [ ] 325. Arquivos do projeto 6 - 1m
 
-25 - [ ] Socket.io 2.0 - Introdução - 49m
+25. - [ ] Socket.io 2.0 - Introdução - 49m
 	- [ ] 326. Teoria - 17m
 	- [ ] 327. Base do projeto - 6m
 	- [ ] 328. Conectando front com back - 5m
 	- [ ] 329. Eventos - 15m
 	- [ ] 330. Disconnected - 6m
 
-26 - [ ] [Proj#07] Chat com Socket.io - 27m
+26. - [ ] [Proj#07] Chat com Socket.io - 27m
 	- [ ] 331. Iniciando - 5m
 	- [ ] 332. Enviando mensagem - 3m
 	- [ ] 333. Recebendo evento no back - 2m
@@ -386,7 +386,7 @@
 	- [ ] 335. Emissão global - 5m
 	- [ ] 336. Melhorando aparência - 7m
 
-27 - [ ] MongoDB no Node com Mongoose - 1h 10m
+27. - [ ] MongoDB no Node com Mongoose - 1h 10m
 	- [ ] 337. Teoria e MySQL Vs Mongo - 31m
 	- [ ] 338. Instalação correta do mongo - 6m
 	- [ ] 339. Conexão do mongo com o node - 5m
@@ -396,7 +396,7 @@
 	- [ ] 343. Deletando dados - 2m
 	- [ ] 344. Update - 4m
 
-28 - [ ] [Proj#08] - Sistema de agendamento com MongoDB - 3h 1m
+28. - [ ] [Proj#08] - Sistema de agendamento com MongoDB - 3h 1m
 	- [ ] 345. Introdução - 3m
 	- [ ] 346. Setup do projeto - 9m
 	- [ ] 347. Formulário de cadastro - 12m
@@ -417,7 +417,7 @@
 	- [ ] 362. Calculando datas - 7m
 	- [ ] 363. Notificação com Mailtrap - 15m
 
-29 - [ ] Iniciando com TDD [Teoria] - 1h 46m
+29. - [ ] Iniciando com TDD [Teoria] - 1h 46m
 	- [ ] 364. Introdução - 21m
 	- [ ] 365. O que é TDD - 11m
 	- [ ] 366. Vantagens de utilizar TDD - 14m
@@ -428,7 +428,7 @@
 	- [ ] 371. Primeiro teste - 18m
 	- [ ] 372. Integrando o Express com o Jest - 26m
 
-30 - [ ] [Proj#09] - Sistema de compartilhamento de imagens com TDD e MongoDB - 1h 56m
+30. - [ ] [Proj#09] - Sistema de compartilhamento de imagens com TDD e MongoDB - 1h 56m
 	- [ ] 373. Apresentação - 5m
 	- [ ] 374. Preparando base - 9m
 	- [ ] 375. Conexão com o Mongo - 4m
@@ -445,7 +445,7 @@
 	- [ ] 386. Teste - Validação de Login - 6m
 	- [ ] 387. Validação de JWT - 7m
 
-31 - [ ] Mercado Pago + Node.js - 1h 25m
+31. - [ ] Mercado Pago + Node.js - 1h 25m
 	- [ ] 388. Introdução - 3m
 	- [ ] 389. Informações importantes - 5m
 	- [ ] 390. Configurando mercado pago - 5m
@@ -460,7 +460,7 @@
 	- [ ] 399. Payment Search - 8m
 	- [ ] 400. Finalizando integração - 8m
 
-32 - [ ] Solicitações de alunos - 1h 11m
+32. - [ ] Solicitações de alunos - 1h 11m
 	- [ ] 401. Como esse sistema funciona - 1m
 	- [ ] 402. Upload de arquivos com Express.js - 20m
 	- [ ] 403. Envio de Email com Node.js - 13m
