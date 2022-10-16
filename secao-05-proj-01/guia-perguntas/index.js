@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+
+// DATABASE
 const connection = require('./database/database');
 const Pergunta = require('./database/Pergunta');
 const Resposta = require('./database/Resposta')
@@ -14,7 +16,7 @@ connection
         console.log(erro);
     })
 
-// setando o motor de html é o EJS
+// setando o motor do html, e que no caso é o EJS
 app.set('view engine', 'ejs');
 // arquivos estaticos
 app.use(express.static('public'));
