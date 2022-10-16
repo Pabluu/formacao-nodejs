@@ -21,7 +21,7 @@ Data da Finalização:
 - [x] [Proj#01] Criando uma plataforma de perguntas e respostas
  com MySQL - 3h 56m ->> `10/10/2022 à 15/10/2022` 
 
- - [ ] Seção 6: Deploy de APP Node + MySQL em VPS - Digital Ocean
+ - [ ] Deploy de APP Node + MySQL em VPS - Digital Ocean
 
 - [ ] [Proj#02] Criando um blog com painel administrativo - 6h 11m
 
