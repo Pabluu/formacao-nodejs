@@ -63,7 +63,7 @@ app.get('/pergunta/:id', (req, res) => {
                     { where: { perguntaId: pergunta.id },
                 order: [['id', 'DESC']] }
                 ).then(respostas => {
-                    res.render('pergunta', {
+                    res.render('resposta', {
                         pergunta: pergunta,
                         respostas: respostas
                     });

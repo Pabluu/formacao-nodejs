@@ -2,6 +2,30 @@ body {
     background-color: #eceff1;
 }
 
-#formulario-pergunta{
+#formulario-pergunta {
     margin-top: 5vh;
+}
+
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #ffffff75;
+}
+
+.card-footer{
+    padding: 0;
+}
+
+.card-footer>a {
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 1.25rem
+}
+
+
+.card-footer > .btn{
+    border-radius: 0 0 0.25rem 0.25rem;
 }
