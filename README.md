@@ -18,8 +18,8 @@ Data da Finalização:
 
 - [x] MySQL Básico - 51m ->> `10/10/2022`
 
-- [ ] [Proj#01] Criando uma plataforma de perguntas e respostas
- com MySQL - 3h 56m ->> `10/10/2022 à /10/2022` 
+- [x] [Proj#01] Criando uma plataforma de perguntas e respostas
+ com MySQL - 3h 56m ->> `10/10/2022 à 15/10/2022` 
 
  - [ ] Seção 6: Deploy de APP Node + MySQL em VPS - Digital Ocean
 
