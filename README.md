@@ -1,4 +1,4 @@
-# CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
+    mgi# CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
 
 Total de Horas: 50 Horas  
 Total de Dias: 76 Dias  
@@ -21,11 +21,11 @@ Data da Finalização:
 - [x] [Proj#01] Criando uma plataforma de perguntas e respostas
  com MySQL - 3h 56m ->> `10/10/2022 à 15/10/2022` 
 
-- [x] Deploy de APP Node + MySQL em VPS - Digital Ocean ->> `16/10/2022 à 18/10/2022`
+- [x] Deploy de APP Node + MySQL em VPS - Digital Ocean - 1h 7m ->> `16/10/2022 à 18/10/2022`
 
-- [ ] [Proj#02] Criando um blog com painel administrativo - 6h 11m
+- [x] [Proj#02] Criando um blog com painel administrativo - 6h 11m ->> `19/10/2022 à 14/11/2022`
 
-- [ ] Javascript ES6, ES7, ES8, 1h 13m
+- [x] Javascript ES6, ES7, ES8, 1h 13m ->> `15/11/2022 à 15/11/2022`
 
 - [ ] Programação assíncrona - Promises e Async/Await - 2h 2m
 

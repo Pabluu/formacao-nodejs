@@ -27,15 +27,16 @@
 	- [x] 20. Delete - 4m
 	- [x] 21. Update - 5m
 
-05. - [x] [Proj#01] Criando uma plataforma de perguntas e respostas
- com MySQL - 3h 56m - `10/10/2022 à /10/2022` 
+05. - [x] [Proj#01] Criando uma plataforma de perguntas e respostas 
+com MySQL - 3h 56m - `10/10/2022 à /10/2022` 
 	- [x] 22. Plataforma de perguntas e resposta - 3m
 	- [x] 23. EJS e criação de projeto - 8m
 	- [x] 24. Configurando e exibindo HTML com EJS - 11m
 	- [x] 25. Exibindo variáveis no HTML - 10m
 	- [x] 26. Estruturas condicionais com EJS - 8m
 	- [x] 27. Estruturas de repetição com EJS\n9m - Recursos
-	- [x] 28. Arquivos estáticos\n7m\nAula concluída\nIniciar\n29. [MUITO IMPORTANTE] - Veja essa aula - Como instalar bootstrap 4 - 1m
+	- [x] 28. Arquivos estáticos\n7m\nAula concluída\nIniciar
+	- [x] 29. [MUITO IMPORTANTE] - Veja essa aula - Como instalar bootstrap 4 - 1m
 	- [x] 30. Apresentando e instalando o Bootstrap - 10m
 	- [x] 31. Criando formulário de perguntas - 9m
 	- [x] 32. Adicionado card no formulário - 2m
@@ -63,93 +64,93 @@
 	- [x] 54. Respondendo perguntas - 9m
 	- [x] 55. Exibição de respostas e finalização\n12m - Recursos
 
-06. - [ ] Deploy de APP Node + MySQL em VPS - Digital Ocean
-	- [ ] 56. Introdução - 2m
-	- [ ] 57. VPS Vs. Hospedagem compartilhada - 5m
-	- [ ] 58. O Deploy simplificado - 3m
-	- [ ] 59. 30 dias grátis na Digital Ocean - 4m
-	- [ ] 60. Iniciando a criação da VPS - 4m
-	- [ ] 61. Putty - 3m
-	- [ ] 62. Geração de chave SSH - 6m
-	- [ ] 63. Acessando a VPS - 4m
-	- [ ] 64. Instalando o Node no servidor - 4m
-	- [ ] 65. Instalando o MySQL - 4m
-	- [ ] 66. Enviando arquivos do projeto para a VPS - 11m
-	- [ ] 67. Configurando banco de dados - 7m
-	- [ ] 68. Rodando aplicação - 6m
-	- [ ] 69. Rodando aplicação no background - 4m
+06. - [x] Deploy de APP Node + MySQL em VPS - Digital Ocean - 1h 7m ->> `16/10/2022 à 18/10/2022`
+	- [x] 56. Introdução - 2m
+	- [x] 57. VPS Vs. Hospedagem compartilhada - 5m
+	- [x] 58. O Deploy simplificado - 3m
+	- [x] 59. 30 dias grátis na Digital Ocean - 4m
+	- [x] 60. Iniciando a criação da VPS - 4m
+	- [x] 61. Putty - 3m
+	- [x] 62. Geração de chave SSH - 6m
+	- [x] 63. Acessando a VPS - 4m
+	- [x] 64. Instalando o Node no servidor - 4m
+	- [x] 65. Instalando o MySQL - 4m
+	- [x] 66. Enviando arquivos do projeto para a VPS - 11m
+	- [x] 67. Configurando banco de dados - 7m
+	- [x] 68. Rodando aplicação - 6m
+	- [x] 69. Rodando aplicação no background - 4m
  
-07. - [ ] [Proj#02] Criando um blog com painel administrativo - 6h 11m
-	- [ ] 70. Introdução - 2m
-	- [ ] 71. Relacionamento - 13m
-	- [ ] 72. Base do projeto - 22m
-	- [ ] 73. Arquitetura e organização de aplicação Node.js - 16m
-	- [ ] 74. Model de categoria - 4m
-	- [ ] 75. Model de artigo - 2m
-	- [ ] 76. Relacionamentos na nossa aplicação - 6m
-	- [ ] 77. Definindo relacionamentos no Sequelize - 12m
-	- [ ] 78. Qual a utilidade dos relacionamentos? - 8m
-	- [ ] 79. Formulário de categoria - 12m
-	- [ ] 80. Cadastro de categorias e Slugify - 9m
-	- [ ] 81. Tabelas do bootstrap - 6m
-	- [ ] 82. Listagem de categorias - 5m
-	- [ ] 83. Facilitando a nevegação - 6m
-	- [ ] 84. Deletando categoria - 7m
-	- [ ] 85. Evitando acidentes - 11m
-	- [ ] 86. Formulário de edição - 9m
-	- [ ] 87. Linkando botões de edição - 2m
-	- [ ] 88. Salvando edição - 7m
-	- [ ] 89. Formulário de artigo - 5m
-	- [ ] 90. Configurando o TinyMCE - 11m
-	- [ ] 91. Traduzindo o TinyMCE - 2m
-	- [ ] 92. Dropdown de categorias - 4m
-	- [ ] 93. Salvando artigos - 4m
-	- [ ] 94. Ajustando tempo no Sequelize - 4m
-	- [ ] 95. Página de artigos - 2m
-	- [ ] 96. Corrigindo bug da navbar - 1m
-	- [ ] 97. Tabela de artigos - 4m
-	- [ ] 98. Joins com Sequelize - 2m
-	- [ ] 99. Deletando artigos - 3m
-	- [ ] 100. Home page do blog e correção do bug da tabela - 9m
-	- [ ] 101. Página de leitura de artigo - 5m
-	- [ ] 102. Linkando páginas de leitura - 2m
-	- [ ] 103. Exibição de conteúdos dinâmicos com EJS - 2m
-	- [ ] 104. Menu dinâmico de categorias - 5m
-	- [ ] 105. Filtrando artigos por categoria - 6m
-	- [ ] 106. Desafio #01 - 4m
-	- [ ] 107. Pagina de edição de artigos - 6m
-	- [ ] 108. TinyMCE Editável - 4m
-	- [ ] 109. Select dinâmico de edição - 3m
-	- [ ] 110. Persistindo alterações - 6m
-	- [ ] 111. Lógica da paginação - 15m
-	- [ ] 112. Página - 4m
-	- [ ] 113. Limitando visualização na Home page - 5m
-	- [ ] 114. Finalizando paginação - 8m
-	- [ ] 115. BUG na paginação - Correção - 2m
-	- [ ] 116. Base do sistema de login - 9m
-	- [ ] 117. Formulário de cadastro - 8m
-	- [ ] 118. Hash de senha - 9m
-	- [ ] 119. Impedindo emails duplicados - 4m
-	- [ ] 120. Listagem de usuários - 5m
-	- [ ] 121. O que são cookies e sessões - 4m
-	- [ ] 122. Express sessions - 7m
-	- [ ] 123. Manipulando sessões - 10m
-	- [ ] 124. Autenticação - 8m
-	- [ ] 125. O que é um Middleware - 4m
-	- [ ] 126. Autorização com middleware - 11m
-	- [ ] 127. Logout - 6m
+07. - [x] [Proj#02] Criando um blog com painel administrativo - 6h 11m ->> `19/10/2022 à 14/11/2022`
+	- [x] 70. Introdução - 2m
+	- [x] 71. Relacionamento - 13m
+	- [x] 72. Base do projeto - 22m
+	- [x] 73. Arquitetura e organização de aplicação Node.js - 16m
+	- [x] 74. Model de categoria - 4m
+	- [x] 75. Model de artigo - 2m
+	- [x] 76. Relacionamentos na nossa aplicação - 6m
+	- [x] 77. Definindo relacionamentos no Sequelize - 12m
+	- [x] 78. Qual a utilidade dos relacionamentos? - 8m
+	- [x] 79. Formulário de categoria - 12m
+	- [x] 80. Cadastro de categorias e Slugify - 9m
+	- [x] 81. Tabelas do bootstrap - 6m
+	- [x] 82. Listagem de categorias - 5m
+	- [x] 83. Facilitando a nevegação - 6m
+	- [x] 84. Deletando categoria - 7m
+	- [x] 85. Evitando acidentes - 11m
+	- [x] 86. Formulário de edição - 9m
+	- [x] 87. Linkando botões de edição - 2m
+	- [x] 88. Salvando edição - 7m
+	- [x] 89. Formulário de artigo - 5m
+	- [x] 90. Configurando o TinyMCE - 11m
+	- [x] 91. Traduzindo o TinyMCE - 2m
+	- [x] 92. Dropdown de categorias - 4m
+	- [x] 93. Salvando artigos - 4m
+	- [x] 94. Ajustando tempo no Sequelize - 4m
+	- [x] 95. Página de artigos - 2m
+	- [x] 96. Corrigindo bug da navbar - 1m
+	- [x] 97. Tabela de artigos - 4m
+	- [x] 98. Joins com Sequelize - 2m
+	- [x] 99. Deletando artigos - 3m
+	- [x] 100. Home page do blog e correção do bug da tabela - 9m
+	- [x] 101. Página de leitura de artigo - 5m
+	- [x] 102. Linkando páginas de leitura - 2m
+	- [x] 103. Exibição de conteúdos dinâmicos com EJS - 2m
+	- [x] 104. Menu dinâmico de categorias - 5m
+	- [x] 105. Filtrando artigos por categoria - 6m
+	- [x] 106. Desafio #01 - 4m
+	- [x] 107. Pagina de edição de artigos - 6m
+	- [x] 108. TinyMCE Editável - 4m
+	- [x] 109. Select dinâmico de edição - 3m
+	- [x] 110. Persistindo alterações - 6m
+	- [x] 111. Lógica da paginação - 15m
+	- [x] 112. Página - 4m
+	- [x] 113. Limitando visualização na Home page - 5m
+	- [x] 114. Finalizando paginação - 8m
+	- [x] 115. BUG na paginação - Correção - 2m
+	- [x] 116. Base do sistema de login - 9m
+	- [x] 117. Formulário de cadastro - 8m
+	- [x] 118. Hash de senha - 9m
+	- [x] 119. Impedindo emails duplicados - 4m
+	- [x] 120. Listagem de usuários - 5m
+	- [x] 121. O que são cookies e sessões - 4m
+	- [x] 122. Express sessions - 7m
+	- [x] 123. Manipulando sessões - 10m
+	- [x] 124. Autenticação - 8m
+	- [x] 125. O que é um Middleware - 4m
+	- [x] 126. Autorização com middleware - 11m
+	- [x] 127. Logout - 6m
 
-08. - [ ] Javascript ES6, ES7, ES8, 1h 13m
-	- [ ] 128. O que é ECMAScript - 5m
-	- [ ] 129. Constantes - 8m
-	- [ ] 130. Let e escopo - 18m
-	- [ ] 131. Parâmetros opcionais - 7m
-	- [ ] 132. JSONs encurtados - 3m
-	- [ ] 133. Operador Spread - 5m
-	- [ ] 134. Desestruturação - 6m
-	- [ ] 135. Arrow function - 10m
-	- [ ] 136. Find - 7m
-	- [ ] 137. Template Literals - 4m
+08. - [x] Javascript ES6, ES7, ES8 - 1h 13m ->> `15/11/2022 à 15/11/2022`
+	- [x] 128. O que é ECMAScript - 5m
+	- [x] 129. Constantes - 8m
+	- [x] 130. Let e escopo - 18m
+	- [x] 131. Parâmetros opcionais - 7m
+	- [x] 132. JSONs encurtados - 3m
+	- [x] 133. Operador Spread - 5m
+	- [x] 134. Desestruturação - 6m
+	- [x] 135. Arrow function - 10m
+	- [x] 136. Find - 7m
+	- [x] 137. Template Literals - 4m
 
 09. - [ ] Programação assíncrona - Promises e Async/Await - 2h 2m
 	- [ ] 138. O que é programação síncrona - 8m
