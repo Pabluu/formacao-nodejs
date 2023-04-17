@@ -34,7 +34,7 @@ Data da Finalização:
 
 - [x] Consumo de API REST com Axios - 52m ->> `14 e 17 /04/2023`
 
-- [ ] Autenticação de API Rest com JWT - 47m ->> `17/04/2023 à`
+- [x] Autenticação de API Rest com JWT - 47m ->> `17/04/2023`
 
 - [ ] Consumo de API Rest com JWT - 28m
 
