@@ -36,7 +36,7 @@ Data da Finalização:
 
 - [x] Autenticação de API Rest com JWT - 47m ->> `17/04/2023`
 
-- [ ] Consumo de API Rest com JWT - 28m
+- [ ] Consumo de API Rest com JWT - 28m ->> `17/04/2023`
 
 - [ ] Documentação de API Rest - 31m
 
