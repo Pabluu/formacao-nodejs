@@ -37,6 +37,13 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <script>
+    let axiosConfig = {
+      headers: {
+        Authorization: "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwYWJsb0BlbWFpbCIsImlhdCI6MTY4MTc0ODg4MCwiZXhwIjoxNjgxOTIxNjgwfQ.7z7oisvqGRvrMWiJgiKwLOTStRhnDZbmrSrdddYQWyY"
+      }
+    }
+
+
     function reloadPage() {
 
       window.location.reload();
@@ -121,7 +128,7 @@
         })
     }
 
-    axios.get('http://localhost:3000/games/')
+    axios.get('http://localhost:3000/games/', axiosConfig)
       .then(response => {
         let games = response.data;
         // console.log(games)
