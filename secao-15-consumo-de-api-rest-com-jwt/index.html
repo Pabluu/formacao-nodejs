@@ -44,6 +44,11 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <script>
+    let axiosConfig = {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem('token')
+      }
+    }
 
     function login() {
       let email = document.querySelector('#email').value
@@ -54,21 +59,17 @@
         email,
         password
       })
-
         .then(response => {
-          console.log(response)
+          let token = response.data['token']
+          localStorage.setItem('token', token)
+          axiosConfig.headers.Authorization = "Bearer " + localStorage.getItem('token')
+          reloadPage()
         })
         .catch((error) => {
           alert('LOGIN INVÁLIDO')
         })
 
 
-    }
-
-    let axiosConfig = {
-      headers: {
-        Authorization: "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwYWJsb0BlbWFpbCIsImlhdCI6MTY4MTc0ODg4MCwiZXhwIjoxNjgxOTIxNjgwfQ.7z7oisvqGRvrMWiJgiKwLOTStRhnDZbmrSrdddYQWyY"
-      }
     }
 
 
@@ -89,7 +90,7 @@
         price: priceInput.value,
       }
 
-      axios.post('http://localhost:3001/game/', game)
+      axios.post('http://localhost:3001/game/', game, axiosConfig)
         .then(response => {
           if (response.statusCode === 200) {
             alert("Game Cadastrado")
@@ -106,7 +107,7 @@
       let idItem = listItem.getAttribute('data-id')
       let titleItem = listItem.getAttribute('data-title')
 
-      axios.delete('http://localhost:3001/game/' + idItem)
+      axios.delete('http://localhost:3001/game/' + idItem, axiosConfig)
         .then(response => {
           alert(`Game "${titleItem}" deletado`)
 
@@ -144,7 +145,7 @@
         price: priceInput.value,
       }
 
-      axios.put('http://localhost:3001/game/' + idValue, game)
+      axios.put('http://localhost:3001/game/' + idValue, game, axiosConfig)
         .then(response => {
           if (response.status === 200) {
             alert(`Game "${titleInput.value}" atualizado`)
