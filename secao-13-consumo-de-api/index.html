@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Games</title>
+
+</head>
+
+<body>
+
+  <hr>
+  <div>
+    <span>Lista de Games</span>
+    <button onclick="reloadPage();">Atualizar</button>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    axios.get('http://localhost:3000/games/')
+      .then(response => {
+        let games = response.data;
+        // console.log(games)
+        let list = document.getElementById('games');
+
+        games.forEach(game => {
+          let item = document.createElement('li')
+          item.innerHTML = `${game.id} - ${game.title} - R$${game.price}`
+          list.appendChild(item);
+        });
+      })
+      .catch(error => {
+        console.log(error)
+      })
+</body>
+
+</html>
