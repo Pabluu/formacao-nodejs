@@ -62,15 +62,18 @@ app.post("/auth", (req, res) => {
     if (user != undefined) {
       // autenticando usuario
       if (user.password === password) {
+        // criando o token(assinatura)
         jwt.sign(
           { id: user.id, email: user.email },
           JWTSecret,
           { expiresIn: "48h" },
           (err, token) => {
             if (err) {
+              //falha ao gerar o token
               res.status(400);
               res.json("falha interna");
             } else {
+              // token gerado e enviado ao usuario
               res.status(200);
               res.json({ token: token });
             }
