@@ -17,8 +17,44 @@
     <button onclick="reloadPage();">Atualizar</button>
 
   </div>
+  <ul id="games"></ul>
+
+  <hr>
+  <h4>Novo Game</h4>
+  <input type="text" name="title" id="title" placeholder="Titulo" /><br>
+  <input type="number" name="year" id="year" placeholder="Ano" /><br>
+  <input type="number" name="price" id="price" placeholder="Preço" /><br>
+  <button onclick="createGame();">Criar</button>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
+  <script>
+    function reloadPage() {
+
+      window.location.reload();
+    }
+
+    function createGame() {
+      let titleInput = document.querySelector('#title')
+      let yearInput = document.querySelector('#year')
+      let priceInput = document.querySelector('#price')
+
+
+      let game = {
+        title: titleInput.value,
+        year: yearInput.value,
+        price: priceInput.value,
+      }
+
+      axios.post('http://localhost:3000/game/', game)
+        .then(response => {
+          if (response.statusCode === 200) {
+            alert("Game Cadastrado")
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
     axios.get('http://localhost:3000/games/')
       .then(response => {
         let games = response.data;
@@ -34,6 +70,9 @@
       .catch(error => {
         console.log(error)
       })
+
+  </script>
+
 </body>
 
 </html>
