@@ -11,6 +11,13 @@
 
 <body>
 
+  <div>
+    <input type="text" name="email" id="email" placeholder="email@email.com">
+    <input type="text" name="password" id="password" placeholder="Digite sua senha">
+
+    <button onclick="login()">Entrar</button>
+  </div>
+
   <hr>
   <div>
     <span>Lista de Games</span>
@@ -37,6 +44,27 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <script>
+
+    function login() {
+      let email = document.querySelector('#email').value
+      let password = document.querySelector('#password').value
+
+
+      axios.post('http://localhost:3001/auth', {
+        email,
+        password
+      })
+
+        .then(response => {
+          console.log(response)
+        })
+        .catch((error) => {
+          alert('LOGIN INVÁLIDO')
+        })
+
+
+    }
+
     let axiosConfig = {
       headers: {
         Authorization: "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwYWJsb0BlbWFpbCIsImlhdCI6MTY4MTc0ODg4MCwiZXhwIjoxNjgxOTIxNjgwfQ.7z7oisvqGRvrMWiJgiKwLOTStRhnDZbmrSrdddYQWyY"
@@ -61,7 +89,7 @@
         price: priceInput.value,
       }
 
-      axios.post('http://localhost:3000/game/', game)
+      axios.post('http://localhost:3001/game/', game)
         .then(response => {
           if (response.statusCode === 200) {
             alert("Game Cadastrado")
@@ -78,7 +106,7 @@
       let idItem = listItem.getAttribute('data-id')
       let titleItem = listItem.getAttribute('data-title')
 
-      axios.delete('http://localhost:3000/game/' + idItem)
+      axios.delete('http://localhost:3001/game/' + idItem)
         .then(response => {
           alert(`Game "${titleItem}" deletado`)
 
@@ -116,7 +144,7 @@
         price: priceInput.value,
       }
 
-      axios.put('http://localhost:3000/game/' + idValue, game)
+      axios.put('http://localhost:3001/game/' + idValue, game)
         .then(response => {
           if (response.status === 200) {
             alert(`Game "${titleInput.value}" atualizado`)
@@ -128,10 +156,9 @@
         })
     }
 
-    axios.get('http://localhost:3000/games/', axiosConfig)
+    axios.get('http://localhost:3001/games/', axiosConfig)
       .then(response => {
         let games = response.data;
-        // console.log(games)
         let list = document.getElementById('games');
 
         games.forEach(game => {
