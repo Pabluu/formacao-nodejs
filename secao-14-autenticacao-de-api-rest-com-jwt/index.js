@@ -12,6 +12,27 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+function auth(req, res, next) {
+  const authToken = req.headers["authorization"];
+  if (authToken != undefined) {
+    const token = authToken.split(" ")[1];
+
+    jwt.verify(token, JWTSecret, (err, data) => {
+      if (err) {
+        res.status(401);
+        res.json({ err: "Token Inválido" });
+      } else {
+        req.token = token;
+        req.loggedUser = { id: data.id, email: data.email };
+        next();
+      }
+    });
+  } else {
+    res.status(401);
+    res.json({ err: "Token invalido" });
+  }
+}
+
 let DB = {
   games: [
     {
@@ -97,7 +118,7 @@ app.post("/auth", (req, res) => {
 });
 
 // Listar todos os game
-app.get("/games", (req, res) => {
+app.get("/games", auth, (req, res) => {
   res.statusCode = 200;
   res.json(DB.games);
 });
