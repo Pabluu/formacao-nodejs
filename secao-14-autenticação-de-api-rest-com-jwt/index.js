@@ -31,7 +31,51 @@ let DB = {
       price: 20,
     },
   ],
+  users: [
+    {
+      id: 1,
+      nome: "Pablo Henrique",
+      email: "pablo@email",
+      password: "JS<3",
+    },
+    {
+      id: 2,
+      nome: "Guilherme Silva",
+      email: "gui@email",
+      password: "node<3",
+    },
+  ],
 };
+
+app.post("/auth", (req, res) => {
+  let { email, password } = req.body;
+
+  // inseriu um email
+  if (email != undefined) {
+    let user = DB.users.find((u) => u.email === email);
+
+    // usuário(email) existe na BD
+    if (user != undefined) {
+      // autenticando usuario
+      if (user.password === password) {
+        res.status(200);
+        res.json({ token: "TOKEN FALSO" });
+      } else {
+        // senha invalida
+        res.status(401);
+        res.json({ err: "Credencial inválida" });
+      }
+    } else {
+      // usuário não existe
+      res.status(404);
+      res.json({ err: "Email não existe na base de dados!!" });
+    }
+  } else {
+    // não inseriu um email
+    res.status(400);
+    res.json({ err: "Insira um email inválido!!" });
+  }
+});
 
 // Listar todos os game
 app.get("/games", (req, res) => {
