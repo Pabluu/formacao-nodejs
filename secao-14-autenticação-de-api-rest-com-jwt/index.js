@@ -161,10 +161,10 @@ app.put("/game/:id", (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.redirect("/games/");
-});
+// app.get("/", (req, res) => {
+//   res.redirect("/games/");
+// });
 
-app.listen(3000, () => {
-  console.log("Servidor Rodando: http://localhost:3000");
+app.listen(3001, () => {
+  console.log("Servidor Rodando: http://localhost:3001");
 });
