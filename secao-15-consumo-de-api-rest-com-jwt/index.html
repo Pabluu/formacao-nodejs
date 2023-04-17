@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Games</title>
+
+</head>
+
+<body>
+
+  <hr>
+  <div>
+    <span>Lista de Games</span>
+    <button onclick="reloadPage();">Atualizar</button>
+
+  </div>
+  <ul id="games"></ul>
+
+  <hr>
+  <h4>Novo Game</h4>
+  <input type="text" name="title" id="title" placeholder="Titulo" /><br>
+  <input type="number" name="year" id="year" placeholder="Ano" /><br>
+  <input type="number" name="price" id="price" placeholder="Preço" /><br>
+  <button onclick="createGame();">Criar</button>
+
+  <hr>
+  <h4>Editar Game</h4>
+  <input type="text" name="idEdit" id="idEdit" placeholder="ID" readonly /><br>
+  <input type="text" name="titleEdit" id="titleEdit" placeholder="Titulo" /><br>
+  <input type="number" name="yearEdit" id="yearEdit" placeholder="Ano" /><br>
+  <input type="number" name="priceEdit" id="priceEdit" placeholder="Preço" /><br>
+  <button onclick="updateGame();">Editar</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+  <script>
+    function reloadPage() {
+
+      window.location.reload();
+    }
+
+    function createGame() {
+      let titleInput = document.querySelector('#title')
+      let yearInput = document.querySelector('#year')
+      let priceInput = document.querySelector('#price')
+
+
+      let game = {
+        title: titleInput.value,
+        year: yearInput.value,
+        price: priceInput.value,
+      }
+
+      axios.post('http://localhost:3000/game/', game)
+        .then(response => {
+          if (response.statusCode === 200) {
+            alert("Game Cadastrado")
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
+
+      reloadPage()
+    }
+
+    function deleteGame(listItem) {
+      let idItem = listItem.getAttribute('data-id')
+      let titleItem = listItem.getAttribute('data-title')
+
+      axios.delete('http://localhost:3000/game/' + idItem)
+        .then(response => {
+          alert(`Game "${titleItem}" deletado`)
+
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+
+    function loadForm(listItem) {
+      let id = listItem.getAttribute('data-id')
+      let title = listItem.getAttribute('data-title')
+      let year = listItem.getAttribute('data-year')
+      let price = listItem.getAttribute('data-price')
+
+      document.querySelector('#idEdit').value = id
+      document.querySelector('#titleEdit').value = title
+      document.querySelector('#yearEdit').value = year
+      document.querySelector('#priceEdit').value = price
+
+
+    }
+
+    function updateGame() {
+      let idInput = document.querySelector('#idEdit')
+      let idValue = idInput.value
+      let titleInput = document.querySelector('#titleEdit')
+      let yearInput = document.querySelector('#yearEdit')
+      let priceInput = document.querySelector('#priceEdit')
+
+
+      let game = {
+        title: titleInput.value,
+        year: yearInput.value,
+        price: priceInput.value,
+      }
+
+      axios.put('http://localhost:3000/game/' + idValue, game)
+        .then(response => {
+          if (response.status === 200) {
+            alert(`Game "${titleInput.value}" atualizado`)
+            reloadPage(0)
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+
+    axios.get('http://localhost:3000/games/')
+      .then(response => {
+        let games = response.data;
+        // console.log(games)
+        let list = document.getElementById('games');
+
+        games.forEach(game => {
+          let item = document.createElement('li')
+
+          item.setAttribute('data-id', game.id)
+          item.setAttribute('data-title', game.title)
+          item.setAttribute('data-year', game.year)
+          item.setAttribute('data-price', game.price)
+
+          item.innerHTML = `${game.id} - ${game.title} - R$${game.price}`
+
+          let deleteBtn = document.createElement('button');
+          deleteBtn.innerHTML = "Deletar"
+          deleteBtn.addEventListener('click', () => {
+            deleteGame(item)
+            reloadPage()
+          })
+
+          let editBtn = document.createElement('button');
+          editBtn.innerHTML = 'Editar';
+          editBtn.addEventListener('click', () => {
+            loadForm(item);
+          })
+
+
+          item.appendChild(deleteBtn);
+          item.appendChild(editBtn)
+
+          list.appendChild(item);
+        });
+      })
+      .catch(error => {
+        console.log(error)
+      })
+
+  </script>
+
+</body>
+
+</html>
