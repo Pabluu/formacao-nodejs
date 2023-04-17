@@ -55,6 +55,21 @@
           console.log(error)
         })
     }
+
+    function deleteGame(listItem) {
+      let idItem = listItem.getAttribute('data-id')
+      let titleItem = listItem.getAttribute('data-title')
+
+      axios.delete('http://localhost:3000/game/' + idItem)
+        .then(response => {
+          alert(`Game "${titleItem}" deletado`)
+
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+
     axios.get('http://localhost:3000/games/')
       .then(response => {
         let games = response.data;
@@ -70,6 +85,14 @@
           item.setAttribute('data-price', game.price)
 
           item.innerHTML = `${game.id} - ${game.title} - R$${game.price}`
+
+          let deleteBtn = document.createElement('button');
+          deleteBtn.innerHTML = "Deletar"
+          deleteBtn.addEventListener('click', () => {
+            deleteGame(item)
+            reloadPage()
+          })
+          item.appendChild(deleteBtn);
           list.appendChild(item);
         });
       })
