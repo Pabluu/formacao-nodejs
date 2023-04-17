@@ -2,14 +2,15 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const env = process.env;
+
+const JWTSecret = env.PASSTOKEN;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.use(cors());
 
 let DB = {
   games: [
@@ -61,8 +62,20 @@ app.post("/auth", (req, res) => {
     if (user != undefined) {
       // autenticando usuario
       if (user.password === password) {
-        res.status(200);
-        res.json({ token: "TOKEN FALSO" });
+        jwt.sign(
+          { id: user.id, email: user.email },
+          JWTSecret,
+          { expiresIn: "48h" },
+          (err, token) => {
+            if (err) {
+              res.status(400);
+              res.json("falha interna");
+            } else {
+              res.status(200);
+              res.json({ token: token });
+            }
+          }
+        );
       } else {
         // senha invalida
         res.status(401);
