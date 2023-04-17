@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require("dotenv").config();
+const env = process.env;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -165,6 +167,6 @@ app.put("/game/:id", (req, res) => {
 //   res.redirect("/games/");
 // });
 
-app.listen(3001, () => {
+app.listen(env.PORT, () => {
   console.log("Servidor Rodando: http://localhost:3001");
 });
