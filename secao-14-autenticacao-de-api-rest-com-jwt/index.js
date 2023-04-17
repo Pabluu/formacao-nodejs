@@ -5,6 +5,7 @@ const cors = require("cors");
 require("dotenv").config();
 const env = process.env;
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
