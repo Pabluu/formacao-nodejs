@@ -3,6 +3,8 @@ const express = require("express");
 const flash = require("express-flash");
 const app = express();
 const session = require("express-session");
+const cookie = require("cookie-parser");
+const cookieParser = require("cookie-parser");
 
 // variaveis de ambiente
 require("dotenv").config();
@@ -14,13 +16,15 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(cookieParser("kasjdiw"));
+
 // express-session
 app.use(
   session({
     secret: "keyboard cat",
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true },
+    cookie: { maxAge: 60000 },
   })
 );
 
