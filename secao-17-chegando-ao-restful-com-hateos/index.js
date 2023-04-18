@@ -224,5 +224,5 @@ app.put("/game/:id", (req, res) => {
 // });
 
 app.listen(env.PORT, () => {
-  console.log("Servidor Rodando: http://localhost:3000");
+  console.log(`Servidor Rodando: http://localhost:${env.PORT}`);
 });
