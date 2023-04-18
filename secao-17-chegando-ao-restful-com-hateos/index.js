@@ -119,8 +119,26 @@ app.post("/auth", (req, res) => {
 
 // Listar todos os game
 app.get("/games", auth, (req, res) => {
+  let HATEOS = [
+    {
+      href: "http://localhost:3000/game/0",
+      method: "GET",
+      rel: "get_game",
+    },
+    {
+      href: "http://localhost:3000/game/0",
+      method: "DELETE",
+      rel: "delete_game",
+    },
+    {
+      href: "http://localhost:3000/auth",
+      method: "POST",
+      rel: "login",
+    },
+  ];
+
   res.statusCode = 200;
-  res.json(DB.games);
+  res.json({ games: DB.games, _links: HATEOS });
 });
 
 // Listar um game pelo ID
@@ -206,5 +224,5 @@ app.put("/game/:id", (req, res) => {
 // });
 
 app.listen(env.PORT, () => {
-  console.log("Servidor Rodando: http://localhost:3001");
+  console.log("Servidor Rodando: http://localhost:3000");
 });
