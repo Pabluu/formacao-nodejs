@@ -1,4 +1,4 @@
-    mgi# CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
+# CRONOGRAMA DO CURSO `FORMAÇÃO NODEJS`
 
 Total de Horas: 50 Horas  
 Total de Dias: 76 Dias  
@@ -36,9 +36,9 @@ Data da Finalização:
 
 - [x] Autenticação de API Rest com JWT - 47m ->> `17/04/2023`
 
-- [ ] Consumo de API Rest com JWT - 28m ->> `17/04/2023`
+- [x] Consumo de API Rest com JWT - 28m ->> `17/04/2023`
 
-- [ ] Documentação de API Rest - 31m
+- [x] Documentação de API Rest - 31m ->> `18/04/2023`
 
 - [ ] Chegando ao RESTful com HATEOAS - 26m
 
