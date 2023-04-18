@@ -56,8 +56,10 @@ Exemplo de resultado:
 Esse endpoint é responsável por fazer o processo de login
 
 **Parametros**:
-Email do usuario cadatrado
-Password: Senha do usuário respectivo.
+
+`email` do usuario cadatrado
+
+`password` do usuário respectivo.
 
 ```
 {
