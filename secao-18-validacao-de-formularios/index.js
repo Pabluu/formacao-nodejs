@@ -31,7 +31,21 @@ app.use(
 app.use(flash());
 
 app.get("/", (req, res) => {
-  res.render("index");
+  let emailError = req.flash("emailError");
+  let pontosError = req.flash("pontosError");
+  let nomeError = req.flash("nomeError");
+
+  let email = req.flash("email");
+  let nome = req.flash("nome");
+  let pontos = req.flash("pontos");
+  res.render("index", {
+    emailError,
+    pontosError,
+    nomeError,
+    email,
+    nome,
+    pontos,
+  });
 });
 
 app.post("/form", (req, res) => {
@@ -59,6 +73,14 @@ app.post("/form", (req, res) => {
     pontosError != undefined ||
     nomeError != undefined
   ) {
+    req.flash("emailError", emailError);
+    req.flash("pontosError", pontosError);
+    req.flash("nomeError", nomeError);
+
+    req.flash("email", email);
+    req.flash("nome", nome);
+    req.flash("pontos", pontos);
+
     res.redirect("/");
   } else {
     res.send("SHOW DE BOLA");

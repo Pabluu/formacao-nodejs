@@ -10,11 +10,14 @@
 
 <body>
   <form action="/form" method="POST">
-    <input type="email" id="email" name="email" placeholder="Email" required><br>
-    <input type="text" id="nome" name="nome" placeholder="Nome"><br>
-    <input type="number" name="pontos" id="pontos" placeholder="Pontos"><br>
+    <input type="email" id="email" name="email" placeholder="Email" value="<%= email%>"><br>
+    <%=emailError %>
+      <br><input type=" text" id="nome" name="nome" placeholder="Nome" value="<%= nome%>"><br>
+      <%=nomeError %>
+        <br><input type="number" name="pontos" id="pontos" placeholder="Pontos" value="<%= pontos%>"><br>
+        <%=pontosError%>
 
-    <button type="submit">Enviar</button>
+          <br><button type="submit">Enviar</button>
   </form>
 </body>
 
