@@ -24,11 +24,41 @@ app.use(
   })
 );
 
-// app.use(flash());
+app.use(flash());
 
 app.get("/", (req, res) => {
-  console.log("Está rodando....");
-  res.send("Rodando...");
+  res.render("index");
+});
+
+app.post("/form", (req, res) => {
+  let { email, nome, pontos } = req.body;
+  let emailError, pontosError, nomeError;
+
+  if (email == undefined || email == "") {
+    emailError = "O email não pode ser vazio";
+  }
+
+  if (pontos == undefined || pontos < 20) {
+    pontosError = "Você não pode ter menos de 20 pontos";
+  }
+
+  if (nome == undefined || nome == "") {
+    nomeError = "O nome não pode ser vazio";
+  }
+
+  if (nome < 4) {
+    nomeError = "O nome é mt pequeno";
+  }
+
+  if (
+    emailError != undefined ||
+    pontosError != undefined ||
+    nomeError != undefined
+  ) {
+    res.redirect("/");
+  } else {
+    res.send("SHOW DE BOLA");
+  }
 });
 
 app.listen(PORT, (req, res) => {
