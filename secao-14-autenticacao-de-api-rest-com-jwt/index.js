@@ -87,7 +87,7 @@ app.post("/auth", (req, res) => {
         jwt.sign(
           { id: user.id, email: user.email },
           JWTSecret,
-          { expiresIn: "48h" },
+          { expiresIn: env.TIMETOKEN || "1h" },
           (err, token) => {
             if (err) {
               //falha ao gerar o token
