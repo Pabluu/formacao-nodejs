@@ -90,10 +90,26 @@ database
 */
 
 // ORDER BY
-database
+/*database
   .select()
   .table("games")
   .orderBy("preco", "desc")
   .then((data) => {
     console.log(data);
   });
+*/
+
+// INSERTS ASSOCIADOS
+/*database
+  .insert({
+    nome: "Rockstar Games",
+    game_id: 5,
+  })
+  .table("estudios")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+*/
