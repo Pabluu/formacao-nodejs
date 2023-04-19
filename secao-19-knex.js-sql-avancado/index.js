@@ -65,4 +65,25 @@ database
   })
   .catch((error) => {
     console.log(error);
-  });*/
+  });
+*/
+
+// DELETE
+/*database
+  .where({ id: 3 })
+  .delete()
+  .table("games")
+  .then((data) => console.log(data));
+*/
+
+//UPDATE
+database
+  .where({ nome: "GTA V" })
+  .update({ preco: 105 })
+  .table("games")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.dir(error);
+  });
