@@ -76,8 +76,8 @@ database
   .then((data) => console.log(data));
 */
 
-//UPDATE
-database
+// UPDATE
+/*database
   .where({ nome: "GTA V" })
   .update({ preco: 105 })
   .table("games")
@@ -86,4 +86,14 @@ database
   })
   .catch((error) => {
     console.dir(error);
+  });
+*/
+
+// ORDER BY
+database
+  .select()
+  .table("games")
+  .orderBy("preco", "desc")
+  .then((data) => {
+    console.log(data);
   });
