@@ -1,7 +1,6 @@
 const database = require("./database");
 
 // INSERT
-
 /*
 let dados = [
   { nome: "Sea of Thieves", preco: 50.97 },
@@ -38,7 +37,6 @@ database
 */
 
 //NESTED QUERIES
-
 /* database.insert({ nome: "Mists of noyah", preco: 25 })
   .into("games")
   .then((data) => {
@@ -56,3 +54,15 @@ database
     console.log(error);
   });
 */
+
+//WHERE
+/*database
+  .select()
+  .whereRaw("preco > 50")
+  .table("games")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });*/
