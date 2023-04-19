@@ -126,3 +126,18 @@ database
     console.log(error);
   });
 */
+
+// JOIN COM WHERE
+
+/*database
+  .select(["games.*", "estudios.*"])
+  .table("games")
+  .innerJoin("estudios", "estudios.game_id", "games.id")
+  .where("games.id", 5)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+  */
