@@ -128,7 +128,6 @@ database
 */
 
 // JOIN COM WHERE
-
 /*database
   .select(["games.*", "estudios.*"])
   .table("games")
@@ -141,3 +140,30 @@ database
     console.log(error);
   });
   */
+
+// RELACIONAMENTO 1:M
+/*database
+  .select(["games.*", "estudios.*"])
+  .table("games")
+  .innerJoin("estudios", "estudios.game_id", "games.id")
+  .where("games.id", 9)
+  .then((data) => {
+    let estudiosGameArray = data;
+    let game = {
+      id: 0,
+      nome: "",
+      estudios: [],
+    };
+
+    game.id = data[0].id;
+    game.nome = data[0].nome;
+
+    data.forEach((estudio) => {
+      game.estudios.push({ nome: estudio.nome });
+    });
+    console.log(game);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+*/
