@@ -113,3 +113,16 @@ database
     console.log(err);
   });
 */
+
+// RELACIONAMENTO 1:1
+/*database
+  .select(["games.*", "estudios.*"])
+  .table("games")
+  .innerJoin("estudios", "estudios.game_id", "games.id")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+*/
