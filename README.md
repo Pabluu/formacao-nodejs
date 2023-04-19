@@ -40,11 +40,11 @@ Data da Finalização:
 
 - [x] Documentação de API Rest - 31m ->> `18/04/2023`
 
-- [ ] Chegando ao RESTful com HATEOAS - 26m
+- [x] Chegando ao RESTful com HATEOAS - 26m ->> `18/04/2023`
 
-- [ ] Validação de formulários - 35m
+- [x] Validação de formulários - 35m ->> `18/04/2023`
 
-- [ ] Knex.JS - SQL Avançado - 1h 51m
+- [ ] Knex.JS - SQL Avançado - 1h 51m ->> `18/04/2023`
 
 - [ ] Vue.js - Introdução - 2h 56m
 
