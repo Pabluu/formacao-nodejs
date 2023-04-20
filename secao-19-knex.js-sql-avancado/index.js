@@ -168,7 +168,8 @@ database
   });
 */
 
-database
+// RELACIONAMENTO MANY TO MANY
+/*database
   .select(["games.nome as game_nome", "estudios.nome as estudio_nome"])
   .table("games_estudios")
   .innerJoin("games", "games.id", "games_estudios.game_id")
@@ -180,3 +181,23 @@ database
   .catch((error) => {
     console.log(error);
   });
+*/
+
+// TRANSACTIONS
+/*async function testeTransacao() {
+  try {
+    await database.transaction(async (trans) => {
+      await database.insert({ nome: "dsfsdf" }).table("estudios");
+      await database.insert({ nome: "sdfsdfsdfsf" }).table("estudio");
+      await database.insert({ nome: "Mojang" }).table("estudios");
+      await database.insert({ nome: "Gearbox" }).table("estudios");
+
+      console.log("OK: Inserts");
+    });
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+testeTransacao();
+*/
