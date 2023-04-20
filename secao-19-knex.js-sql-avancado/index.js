@@ -167,3 +167,16 @@ database
     console.log(error);
   });
 */
+
+database
+  .select(["games.nome as game_nome", "estudios.nome as estudio_nome"])
+  .table("games_estudios")
+  .innerJoin("games", "games.id", "games_estudios.game_id")
+  .innerJoin("estudios", "estudios.id", "games_estudios.estudio_id")
+  .where("games.id", 5)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
